@@ -1,9 +1,31 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Threading.Tasks;
+
+/*                  HOT KEYS
+     * В режиме отладки: Watch Ctr+D,W QuickWatch Ctr+D,Q
+     * Форматирование выбранной части Ctr+E+F, форматирование всего Ctr+E+D
+     * Удалить строку Ctr+Shift+L, вырезать строку Ctrl+L поднять/опустить строку Alt+стрелка вверх/вниз
+     * Добавить строку сверзу Ctrl+Enter, добавить строку снизу Ctrl+Shift+Enter
+     * Транспонировать строку Shift+ALT+T
+     * Буфер обмена Ctr+Shift+V
+     * Свернуть/развернуть блок Ctr+M,M
+     * Свернуть/развернуть ВСЕ блоки Ctr+M,O
+     * Начало/окончание блоков {}, комментирования, или #region Ctr+]
+     * Перейти к номеру строки Ctr+G
+     * Перейти к определению класса/метода/свойства F12
+     * Помощник Ctr+Space, Ctr+J
+     * Показ всех снипетов Ctr+K,X
+     * Закоментировать выбранные линии Ctr+E,C;  раскомментировать Ctr+E,U
+     * Окружить выделенный текст  Ctr+K,S
+     * Дублировать строку Ctr+E,V
+     * Быстрые действия Ctr+.
+     * Несколько точек вставки Ctr+ALT+нажатие
+     * Выбор блока ALT и тащим мышь или SHIFT+ALT+стрелки
+     * Удалить все точки останова Ctrl+Shift+F9
+     * 
+     */
+
 
 namespace ConsoleApp1
 {
