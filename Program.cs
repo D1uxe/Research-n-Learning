@@ -94,6 +94,7 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
 
+            #region исследование делегатов, анонимных методов, лямбд
             //исследование делегатов, анонимных методов, лямбд. Здесь в linq-метод пытался передать не лямбду а метод.
             Func<int, bool> del3;
             Func<int, bool> del2;
@@ -121,9 +122,12 @@ namespace ConsoleApp1
             Console.WriteLine(result_3);
 
             Console.ReadKey();
+            #endregion
 
 
 
+            #region Выпрямитель дерева
+            /*
             var familyRoot = new Family() { Name = "FamilyRoot" };
 
             var familyB = new Family() { Name = "FamilyB" };
@@ -143,7 +147,7 @@ namespace ConsoleApp1
             //с подстановкой делегата
             var res = FamilylLst.Flatten(child_Delegat);
             //или что тоже самое с подстановкой лямбда-выражения
-           // var res = FamilylLst.Flatten(i=>i.Children);
+            // var res = FamilylLst.Flatten(i=>i.Children);
 
 
 
@@ -151,9 +155,45 @@ namespace ConsoleApp1
             {
                 Console.WriteLine(item.Name);
             }
-            
-
             Console.ReadKey();
+            */
+            #endregion
+
+
+
+            #region Присвоение ссылочных типов друг другу
+            /*
+               Dog Node = new Dog();
+               Dog SubNode = new Dog();
+
+               Node.j = 5;
+               SubNode.j = 8;
+               Node = SubNode;
+
+               Node.j = 10;
+               Console.WriteLine($"dog1 {Node.j}");
+               Console.WriteLine($"dog2 {SubNode.j}");
+
+               SubNode.j = 12;
+               Console.WriteLine($"Dog1 {Node.j}");
+               Console.WriteLine($"Dog2 {SubNode.j}");
+
+               SubNode = Node;
+               Console.WriteLine($"dOg1 {Node.j}");
+               Console.WriteLine($"dOg2 {SubNode.j}");
+
+               SubNode.j = 20;
+               Console.WriteLine($"dOg1 {Node.j}");
+               Console.WriteLine($"dOg2 {SubNode.j}");
+
+               Node.j = 22;
+               Console.WriteLine($"dOg1 {Node.j}");
+               Console.WriteLine($"dOg2 {SubNode.j}");
+
+
+               Console.ReadKey();
+               */ 
+            #endregion
 
             /* 
 
